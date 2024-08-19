@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | FAQ accordion</title>
+  </head>
+
+  <body>
+    <main>
+      <div class="container">
+        <div class="title-container">
+          <img
+            class="star-icon"
+            src="assets/images/icon-star.svg"
+            alt="star icon"
+          />
+          <h1 class="main-title">FAQs</h1>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-header" onclick="clicked(this)">
+            <p class="faq-question">
+              What is Frontend Mentor, and how will it help me?
+            </p>
+            <button>
+              <img
+                class="plus-icon"
+                src="assets/images/icon-plus.svg"
+                alt="plus icon"
+              />
+            </button>
+          </div>
+          <p class="faq-answer">
+            Frontend Mentor offers realistic coding challenges to help
+            developers improve their frontend coding skills with projects in
+            HTML, CSS and JavaScript. It's suitable for all levels and ideal for
+            portfolio building.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-header" onclick="clicked(this)">
+            <p class="faq-question">Is Frontend Mentor free?</p>
+            <button>
+              <img
+                class="plus-icon"
+                src="assets/images/icon-plus.svg"
+                alt="plus icon"
+              />
+            </button>
+          </div>
+          <p class="faq-answer">
+            The majority of our challenges are free, yes. We do have some that
+            are premium and require a Pro subscription to access. It will say on
+            each challenge whether they are free or premium, so it's easy to
+            tell the difference.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-header" onclick="clicked(this)">
+            <p class="faq-question">
+              Can I use Frontend Mentor projects in my portfolio?
+            </p>
+            <button>
+              <img
+                class="plus-icon"
+                src="assets/images/icon-plus.svg"
+                alt="plus icon"
+              />
+            </button>
+          </div>
+          <p class="faq-answer">
+            Definitely! Please do feel free to use whatever you build in your
+            portfolio. Helping developers add professional-looking projects to
+            their portfolio was one of the reasons we created this platform!
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-header" onclick="clicked(this)">
+            <p class="faq-question">
+              How can I get help if i'm stuck on a challenge?
+            </p>
+            <button>
+              <img
+                class="plus-icon"
+                src="assets/images/icon-plus.svg"
+                alt="plus icon"
+              />
+            </button>
+          </div>
+          <p class="faq-answer">
+            The best (and quickest) way to get help on a challenge is in our
+            Discord server. There are thousands of other developers in there, so
+            it's a great place to ask questions. We even have a dedicated "help"
+            channel! If you haven't joined yet, you can get an invite to our
+            Discord server here.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

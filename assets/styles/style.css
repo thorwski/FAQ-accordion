@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Work Sans", sans-serif;
+}
+
+body {
+  background-color: hsl(275, 100%, 97%);
+  background-image: url("/assets/images/background-pattern-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 50px;
+}
+
+.container {
+  background-color: white;
+  padding: 40px 40px 20px 40px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 50px 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+}
+
+.title-container {
+  display: flex;
+  align-items: center;
+}
+
+.star-icon {
+  margin-right: 20px;
+}
+
+.main-title {
+  color: hsl(292, 42%, 14%);
+  font-size: 56px;
+}
+
+.faq-item {
+  border-bottom: 1px solid rgb(238, 238, 238);
+}
+
+.faq-item:last-child {
+  border: none;
+  margin-bottom: 0px;
+}
+
+.faq-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.faq-item:last-child .faq-header {
+  margin-bottom: 0;
+}
+
+.faq-question {
+  cursor: pointer;
+  color: hsl(292, 42%, 14%);
+  font-weight: 600;
+  font-size: 18px;
+  margin: 30px 0px;
+}
+
+.faq-item:last-child .faq-question {
+  margin-bottom: 0px;
+}
+
+.faq-question:hover {
+  color: rgb(193, 8, 193);
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  line-height: 0;
+  cursor: pointer;
+}
+
+.faq-item:last-child button {
+  margin-top: 30px;
+}
+
+.faq-answer {
+  color: hsl(292, 16%, 49%);
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+.faq-answer.show {
+  max-height: 400px;
+  opacity: 1;
+  margin-bottom: 30px;
+}
+
+.faq-item:last-child .faq-answer {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 500px) {
+  .container {
+    padding: 30px 30px 10px 30px;
+  }
+  .star-icon {
+    width: 25px;
+  }
+
+  .main-title {
+    font-size: 35px;
+  }
+
+  .faq-question {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 700px) {
+  body {
+    background-image: url("/assets/images/background-pattern-mobile.svg");
+  }
+}
